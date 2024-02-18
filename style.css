@@ -182,10 +182,9 @@ p {
     display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 380px) {
     body {
         width: 100%;
-        /* Hace que el cuerpo ocupe todo el ancho */
     }
 
     .logo {
@@ -212,16 +211,17 @@ p {
     .contenedor-caja-texto {
         top: 20px;
         left: 25px;
-        width:360px;
         padding: 10px;
         height: 300px;
+        width: 340px;
     }
 
     .contenedor-botones {
         width: 100%;
-        margin: 0 auto;
         padding-left: 40px;
         top:280px;
+        padding-top: 0;
+        margin-top: 60px;
         /* Ajusta el relleno */
     }
 
@@ -229,7 +229,7 @@ p {
         display: block;
         position: absolute;
         width: 100%;
-        top: 65%;
+        top: 80%;
         height: 300px;
         left: 20px;
         margin:0 auto;
