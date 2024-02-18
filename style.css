@@ -1,32 +1,37 @@
-*{
-    font-family: 'Inter','sams-serif';
+* {
+    font-family: 'Inter', 'sams-serif';
 }
-body{
+
+body {
     background-color: #f4f4fc;
     width: 1440px;
-height: 1024px;
-top: 622px;
-left: -2277px;
+    height: 1024px;
+    top: 622px;
+    left: -2277px;
 
 }
-header{
+
+header {
     width: 100%;
     height: 70px;
 }
-.logo{
+
+.logo {
     width: 100%;
     height: 50px;
     padding-top: 20px;
     padding-left: 40px;
 }
-main{
+
+main {
     position: absolute;
     width: 100%;
     height: 90%;
     display: flex;
-    justify-content: left; 
+    justify-content: left;
 }
-.contenedor-caja-texto{
+
+.contenedor-caja-texto {
     position: absolute;
     left: 200px;
     top: 100px;
@@ -34,35 +39,40 @@ main{
     width: 1080px;
     height: 600px;
 }
-.caja-texto{
+
+.caja-texto {
     width: 80%;
-    height: 80%;
+    height: 50%;
     border: none;
     background-color: #f4f4fc;
     cursor: pointer;
     color: #0A3871;
     font-size: 32PX;
     font-weight: 400;
-    font-family: 'Inter','sams-serif';
+    font-family: 'Inter', 'sams-serif';
 }
-.caja-texto::placeholder{
+
+.caja-texto::placeholder {
     color: #0A3871;
 }
-.alerta{
+
+.alerta {
     position: absolute;
     left: 300px;
     top: 670px;
     display: flex;
-    color: #495057;  
+    color: #495057;
 }
-.contenedor-botones{
+
+.contenedor-botones {
     position: absolute;
     top: 400px;
     height: 80px;
     padding-left: 15%;
     padding-top: 15%;
 }
-.btn-encriptar{
+
+.btn-encriptar {
     width: 328px;
     height: 67px;
     border-radius: 24px;
@@ -70,12 +80,13 @@ main{
     color: white;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Inter','sams-serif';
+    font-family: 'Inter', 'sams-serif';
     border: none;
     margin-right: 20px;
     cursor: pointer;
 }
-.btn-desencriptar{
+
+.btn-desencriptar {
     width: 328px;
     height: 67px;
     border-radius: 24px;
@@ -83,11 +94,12 @@ main{
     color: white;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Inter','sams-serif';
+    font-family: 'Inter', 'sams-serif';
     border: 1px solid #0A3871;
     cursor: pointer;
 }
-.dos{
+
+.dos {
     display: block;
     position: relative;
     width: 400px;
@@ -99,31 +111,34 @@ main{
     border-radius: 32px;
     box-shadow: 0 24px 32px -8px black;
 }
-.contenedor-munieco{
+
+.contenedor-munieco {
     position: absolute;
     left: 30px;
     top: 180px;
     box-sizing: border-box;
     padding-top: 50px;
 }
-.contenedor-parrafo{
+
+.contenedor-parrafo {
     position: absolute;
     box-sizing: border-box;
     left: 60px;
     top: 570px;
 }
 
-.contenedor-parrafo h3{
+.contenedor-parrafo h3 {
     font-size: 20px;
-
 }
-.contenedor-parrafo h3,p{
+
+.contenedor-parrafo h3,
+p {
     text-align: center;
     margin: auto;
 }
 
 
-.contenedor-resultado{
+.contenedor-resultado {
     position: absolute;
     bottom: 330px;
     width: 320px;
@@ -133,12 +148,12 @@ main{
     margin-left: 25px;
 }
 
-.contenedor-resultado p{
+.contenedor-resultado p {
     color: #495057;
     font-size: 25px;
 }
 
-.contenedor-copiar{
+.contenedor-copiar {
     display: flex;
     position: absolute;
     bottom: 400px;
@@ -147,7 +162,7 @@ main{
     padding-left: 40px;
 }
 
-.btn-copiar{
+.btn-copiar {
     width: 328px;
     height: 67px;
     border-radius: 24px;
@@ -163,6 +178,77 @@ main{
     right: 4px;
 }
 
-.ocultar{
+.ocultar {
     display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        /* Hace que el cuerpo ocupe todo el ancho */
+    }
+
+    .logo {
+        width: 100px;
+        height: 50.58px;
+        top: 73.42px;
+        left: 0px;
+    }
+
+    #logo {
+        width: 100%;
+        height: 46.37px;
+        top: 73.42px;
+        left: 0px;
+        margin: 0 auto;
+    }
+
+    .caja-texto {
+        font-size: 18px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contenedor-caja-texto {
+        top: 20px;
+        left: 25px;
+        width:360px;
+        padding: 10px;
+        height: 300px;
+    }
+
+    .contenedor-botones {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 40px;
+        top:280px;
+        /* Ajusta el relleno */
+    }
+
+    .dos{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 65%;
+        height: 300px;
+        left: 20px;
+        margin:0 auto;
+
+    }
+    .contenedor-munieco,.alerta, .contenedor-copiar{
+        display: none;
+    }
+    .contenedor-parrafo{
+        font-size: 25px;
+        width: 100%;
+        left: 0;
+        top: 30px;
+    }
+    .contenedor-resultado {
+        font-size: 15px;
+        width: 100%;
+        left: 0;
+        top: 30px;
+        margin: 0;
+    }
 }
