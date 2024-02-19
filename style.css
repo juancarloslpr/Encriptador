@@ -182,7 +182,7 @@ p {
     display: none;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 376px) {
     body {
         width: 100%;
     }
